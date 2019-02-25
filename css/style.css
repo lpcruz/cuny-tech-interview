@@ -1,0 +1,8 @@
+#reminder-button {
+    height: 50px;
+    background-color: tomato;
+    border: solid thin;
+    font-size: 13px;
+    cursor: pointer;
+    color: white;
+  }
