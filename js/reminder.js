@@ -11,7 +11,7 @@ const data = {
 }
 
 function showConfirmationMessage() {
-  confirmationMessage.innerHTML = 'OK! You will be reminded after 3 days!';
+  confirmationMessage.innerHTML = 'OK! You have some time to do these things. You will be reminded after 3 days!';
   button.style = 'display:none;';
 
   return this;
@@ -48,7 +48,7 @@ function remindMe() {
   const session = Object.create(data);
   
   session.wantsToReminded = true
-  session.dateClicked = testData;
+  session.dateClicked = new Date();
   
   // display confirmation 
   this.showConfirmationMessage();
@@ -56,6 +56,4 @@ function remindMe() {
   //init reminder check
   this.displayReminderNotification(session);
 
-  
-  return session;
 }
