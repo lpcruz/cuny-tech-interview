@@ -20,6 +20,7 @@ function remindMe() {
 
 function showConfirmationMessage() {
   confirmationMessage.innerHTML = 'OK! You will be reminded after 3 days!';
+  button.style = 'display:none;';
 
   return this;
 }
